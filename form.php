@@ -8,12 +8,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Form</title>
+    <style>
+        body{
+            background-color: #222;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 <form action="stampaForm.php" method="POST">
-        <div class="d-flex flex-column my-4 mx-3">
-            <label class="my-2 w-25 text-center" for="">Inserisci un paragrafo</label>
-            <input autocomplete="off" type="text" placeholder="Inserisci la tua stringa" name="Paragrafo" class="w-25">
+    <div class="d-flex flex-column my-4 mx-3">
+        <label class="my-2 w-25 text-center" for="">Inserisci un paragrafo</label>
+        <textarea autocomplete="off" class="w-25" placeholder="Inserisci la tua stringa" name="Paragrafo" id="" cols="30" rows="10"></textarea>
         </div>
         <hr class="mx-3 my-3 w-50">
         <div class="d-flex flex-column my-3 mx-3">
