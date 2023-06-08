@@ -11,7 +11,7 @@
         $paragrafo = $_POST["Paragrafo"];
         $parola = $_POST["parolaCensurata"];
         $asterischi = "<span style=color:grey>***</span>";
-        $stringaCensurata = str_replace( $parola , $asterischi , $paragrafo);
+        $stringaCensurata = str_ireplace( $parola , $asterischi , $paragrafo);
     ?>
 
     <h2>Il Paragrafo scritto è:</h2>
